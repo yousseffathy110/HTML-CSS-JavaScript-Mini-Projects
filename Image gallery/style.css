@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+.wrapper .img-box {
+  width: 100px;
+  height: 500px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: url(https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  position: relative;
+}
+.wrapper .img-box:nth-child(2) {
+  background: url(https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .img-box:nth-child(3) {
+  background: url(https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .img-box:last-child {
+  background: url(https://images.unsplash.com/photo-1583795128727-6ec3642408f8?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .img-box:hover {
+  width: 500px;
+  cursor: pointer;
+}
+h3 {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  transform: translatex(50%);
+  -webkit-transform: translatex(50%);
+  -moz-transform: translatex(50%);
+  -ms-transform: translatex(50%);
+  -o-transform: translatex(50%);
+  color: white;
+}
