@@ -6,5 +6,51 @@
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <div class="screen">
+        <input type="text" readonly class="calctext" id="calctext" />
+        <div class="calcresult" id="calcresult"></div>
+      </div>
+      <div class="calcbody">
+        <div class="wrapper">
+          <div class="row">
+            <button
+              class="clear"
+              onclick="clearDisplay()"
+              style="color: red; font-size: 2.5rem"
+            >
+              C
+            </button>
+            <button onclick="reset()">X</button>
+            <button onclick="display('/')" class="math">/</button>
+            <button onclick="display('*')" class="math">*</button>
+          </div>
+          <div class="row">
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('-')" class="math">-</button>
+          </div>
+          <div class="row">
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('+')" class="math">+</button>
+          </div>
+          <div class="row">
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button class="special" onclick="Calculate()">=</button>
+          </div>
+          <div class="row">
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
