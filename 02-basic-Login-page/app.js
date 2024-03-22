@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const forgotPasswordLink = document.getElementById("forgotPassword");
 
   const fetchUserdata = () => {
-    return fetch("https://api.example.com/users").then((response) => {
+    return fetch("http://api.com/yousef").then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch user credentials");
       }
