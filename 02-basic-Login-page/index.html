@@ -19,25 +19,31 @@
   <body>
     <section>
       <h1 class="heading">login</h1>
-      <form method="get">
+      <form id="loginForm">
         <div class="input-box">
-          <input type="text" placeholder="Username" required />
+          <input type="text" id="username" placeholder="Username" required />
           <i class="bx bxs-user"></i>
         </div>
 
         <div class="input-box">
-          <input type="password" placeholder="Password" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
           <i class="bx bxs-lock-alt"></i>
         </div>
 
         <div class="remember">
           <label><input type="checkbox" />Remember me</label>
-          <a href="#">Forgot Password?</a>
+          <a href="#" id="forgotPassword">Forgot Password?</a>
         </div>
 
         <input type="submit" value="Login" class="btn" />
       </form>
       <p class="register">Don't have an account ?<a href="#">register</a></p>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
